@@ -1,3 +1,5 @@
+require('dotenv').config({ path: require('find-config')('.env') })
+
 export default {
   port: process.env.PORT || 5050,
   clientID: process.env.CLIENT_ID || '',
